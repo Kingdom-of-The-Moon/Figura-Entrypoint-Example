@@ -28,7 +28,6 @@ dependencies {
 
 	//LuaJ
 	implementation group: 'org.luaj', name: 'luaj-jse', version: '3.0.1'
-	include group: 'org.luaj', name: 'luaj-jse', version: '3.0.1'
 }
 
 processResources {
