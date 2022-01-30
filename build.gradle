@@ -20,14 +20,21 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
-	//modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	//Fabric API. This is technically optional, but you probably want it anyway.
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	//Figura. put your figura .jar path here
-	modImplementation files('D:/GitHub/Figura/build/libs/figura-0.0.8.jar')
+	modImplementation files("D:/GitHub/Figura/build/libs/figura-${project.figura_version}.jar")
 
 	//LuaJ
 	implementation group: 'org.luaj', name: 'luaj-jse', version: '3.0.1'
+
+	//WebSocket library
+	modImplementation 'com.neovisionaries:nv-websocket-client:2.14'
+
+	//Google has better IO options than java, 4head
+	// https://mvnrepository.com/artifact/com.google.guava/guava
+	implementation group: 'com.google.guava', name: 'guava', version: '30.1.1-jre'
 }
 
 processResources {

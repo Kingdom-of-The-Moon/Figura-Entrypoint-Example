@@ -6,14 +6,8 @@
   "name": "Figura Entrypoint Example",
   "description": "Example mod for custom Lua APIs in Figura",
   "authors": [
-    "Zandra",
     "Francy-Chan"
   ],
-  "contact": {
-    "homepage": "http://figura.blancworks.org",
-    "sources": "https://github.com/Blancworks/Figura/",
-    "issues": "https://github.com/Blancworks/Figura/issues"
-  },
 
   "license": "LGPL-2.1",
   "icon": "assets/figura_entrypoint_example/icon.png",
@@ -34,15 +28,5 @@
     "minecraft": ">=1.18-",
     "java": ">=16",
     "figura": ">=0.0.8-"
-  },
-  "suggests": {
-    "another-mod": "*"
-  },
-  "custom": {
-    "modmenu": {
-      "links": {
-        "modmenu.discord": "https://discord.gg/ekHGHcH8Af"
-      }
-    }
   }
 }
